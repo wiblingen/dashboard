@@ -223,7 +223,7 @@ $isNewZumInstall = isset($iniData[$section][$key]) && $iniData[$section][$key] =
 		</div><br />
 		</div>
 
-		<h1>WPSD <?php echo __( 'Digital Voice' ) . " ".__( 'Dashboard for' )." <code style='font-weight:550;'>".$_SESSION['MYCALL']."</code>"; ?></h1>
+		<h1>ODS <?php echo __( 'Dashboard pro' )." <code style='font-weight:550;'>".$_SESSION['MYCALL']."</code>"; ?></h1>
 		<div id="CheckMessage">
 		<?php
 		    include('includes/messages.php');
@@ -236,7 +236,7 @@ $isNewZumInstall = isset($iniData[$section][$key]) && $iniData[$section][$key] =
 		  </div>
 		  <?php if ($_SERVER["PHP_SELF"] == "/admin/index.php") {
 		      echo ' <a class="menuconfig" href="/admin/configure.php">'.__( 'Configuration' ).'</a>';
-		      echo ' <a class="menuupdate noMob" href="/admin/advanced/services.php?action=updatehostsfiles">'.__( 'DMRCZ Update' ).'</a>'."\n";
+		      echo ' <a class="menuupdate noMob" href="/admin/advanced/services.php?action=updatehostsfiles">'.__( 'ODS Update' ).'</a>'."\n";
 		      echo ' <a class="menuadvanced noMob" href="/admin/advanced/">Advanced</a>'."\n";
 		      echo ' <a class="menupower" href="/admin/power.php">'.__( 'Power' ).'</a>'."\n";
 		      echo ' <a class="menusysinfo noMob" href="/admin/sysinfo.php">System Details</a>'."\n";
