@@ -864,6 +864,7 @@ if (file_exists($bmAPIkeyFile) && fopen($bmAPIkeyFile,'r')) {
 			<a class="noMob menureset" href="javascript:factoryReset();"><?php echo __( 'Factory Reset' );?></a>
 			<a class="noMob menubackup" href="/admin/config_backup.php"><?php echo __( 'Backup/Restore' );?></a>
 			<a class="noMob menuupdate" href="/admin/advanced/services.php?action=updatehostsfiles"><?php echo __( 'ODS Update' );?></a>
+            <a class="noMob menuupdate" href="/admin/advanced/services.php?action=updatehostsfiles"><?php echo __( 'test' );?></a>
 			<a class="noMob menuadvanced" href="/admin/advanced/">Advanced</a>
 			<a class="menupower" href="/admin/power.php"><?php echo __( 'Power' );?></a>
 			<a class="menuadmin" href="/admin/"><?php echo __( 'Admin' );?></a>
