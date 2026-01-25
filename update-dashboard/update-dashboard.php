@@ -12,7 +12,7 @@
 
     <?php
     if (isset($_POST['update'])) {
-        $targetDir = '/var/www/dashbord';
+        $targetDir = '/var/www/dashboard';
         $repoUrl = 'https://github.com/wiblingen/dashboard.git';
 
         // 1. Odstranění adresáře
