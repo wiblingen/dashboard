@@ -15,12 +15,15 @@
         $targetDir = '/var/www/dashboard';
         $repoUrl = 'https://github.com/wiblingen/dashboard.git';
 
-        // 1. Odstranění adresáře
+        // 1. Změna vlastnictví /var/www (vyžaduje sudo v sudoers)
+        exec("sudo chown www-data:www-data /var/www 2>&1", $out1, $res1);
+        
+        // 2. Odstranění adresáře
         // -rf smaže adresář i s obsahem bez ptaní
-        exec("rm -rf " . escapeshellarg($targetDir) . " 2>&1", $outputRm, $returnRm);
+        exec("sudo rm -rf " . escapeshellarg($targetDir) . " 2>&1", $outputRm, $returnRm);
 
         if ($returnRm === 0) {
-            // 2. Git clone
+            // 3. Git clone
             exec("git clone $repoUrl " . escapeshellarg($targetDir) . " 2>&1", $outputGit, $returnGit);
 
             if ($returnGit === 0) {
