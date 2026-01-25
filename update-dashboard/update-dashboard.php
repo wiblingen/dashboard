@@ -24,7 +24,7 @@
 
         if ($returnRm === 0) {
             // 3. Git clone
-            exec("git clone $repoUrl " . escapeshellarg($targetDir) . " 2>&1", $outputGit, $returnGit);
+            exec("sudo git clone $repoUrl " . escapeshellarg($targetDir) . " 2>&1", $outputGit, $returnGit);
 
             if ($returnGit === 0) {
                 echo "<p style='color: green;'><strong>Výsledek:</strong> Aktualizace proběhla úspěšně.</p>";
