@@ -236,6 +236,7 @@ $isNewZumInstall = isset($iniData[$section][$key]) && $iniData[$section][$key] =
 		  </div>
 		  <?php if ($_SERVER["PHP_SELF"] == "/admin/index.php") {
 		      echo ' <a class="menuconfig" href="/admin/configure.php">'.__( 'Configuration' ).'</a>';
+			  echo ' <a class="menuupdatedashboard" href="/update-dashboard.php">'.__( 'Update-dashboard' ).'</a>';
 		      echo ' <a class="menuupdate noMob" href="/admin/advanced/services.php?action=updatehostsfiles">'.__( 'ODS Update' ).'</a>'."\n";
 		      echo ' <a class="menuadvanced noMob" href="/admin/advanced/">Advanced</a>'."\n";
 		      echo ' <a class="menupower" href="/admin/power.php">'.__( 'Power' ).'</a>'."\n";
